@@ -9,7 +9,8 @@
 
 <h1><mark>Formulário de Contato</mark></h1>
 
-<form action="enviar.php" method="post">
+<div>
+    <form action="enviar.php" method="post">
     <label for="nome"><strong>Nome:</strong></label>
     <input type="text" id="nome" name="nome" required>
     <br>
@@ -22,14 +23,41 @@
     <small>Insira um endereço válido, exemplo: <em>email@dominio.com</em>.</small>
     <br><br>
 
-    <label for="mensagem"><big><strong>Mensagem:</strong></big></label><br>
+    <label for="notas">Digite sua nota</label>
+    <input type="number" name="nota" id="nota" required>
+    <br><br>
+    </div>
+    <div>
+        <label for="assunto"><strong>Assunto:</strong></label>
+        <input type="text" id="assunto" name="assunto" required>
+
+        <br><br>
+        <label for="prioridade"><strong>Prioridade:</strong></label>
+        <select id="prioridade" name="prioridade" required>
+            <option value="baixa">Baixa</option>
+            <option value="media">Média</option>
+            <option value="alta">Alta</option>
+        </select>
+        <br>
+        <small>Escolha a prioridade do seu contato.</small>
+        <br><br>
+
+        <label for="data">Data de Envio:</label>
+        <input type="date" id="data" name="data" required> 
+        <br><br>
+    <button>
+        <a href="https://github.com/" target="_blank">Click aqui</a>
+    </button>
+
+    <label for="mensagem"><h5><strong>Mensagem:</strong></h5></label>
     <textarea id="mensagem" name="mensagem" required></textarea>
     <br>
     <small>Escreva sua mensagem detalhada.</small>
     <br><br>
 
+
     <blockquote cite="https://books.google.com">
-        "Deixe sua mensagem com clareza, pois a comunicação é fundamental."
+    "Deixe sua mensagem com clareza, pois a comunicação é fundamental."
     </blockquote>
     <q>Respeito e cordialidade são essenciais</q><br><br>
 
@@ -44,8 +72,32 @@
     otimizar o <ins>design</ins> e a <ins>funcionalidade</ins> das páginas.
     <br><small><del>Elementos obsoletos</del> foram removidos para manter o código limpo e eficiente.</small>
 </p>
-
 <pre>
+    <script src="https://cdn.jsdelivr.net/npm/twill@latest/dist/twill.min.js"></script>
+</pre>
+
+<!-- //tabela de notas -->
+<table>
+    <tr>
+        <th>Notas</th>
+    </tr>
+    <tr>
+        <td>90</td>
+        <td>Aprovado</td>
+    </tr>
+    <tr>
+        <td>80</td>
+        <td>Aprovado</td>
+    </tr>
+    <tr>
+        <td>70</td>
+        <td>Aprovado</td>
+    </tr>
+    <tr>
+        <td>60</td>
+        <td>Reprovado</td>
+    </tr>
+</table>
 <code>
 Lista de itens importantes:
 <ol>
@@ -53,6 +105,29 @@ Lista de itens importantes:
     <li><strong>E-mail</strong> - Canal de contato.</li>
     <li>Mensagem - <mark>Conteúdo principal</mark> do formulário.</li>
 </ol>
+<!-- //tabela de notas -->
+    <table>
+        <tr>
+            <th>Notas</th>
+        </tr>
+        <tr>
+            <td>90</td>
+            <td>Aprovado</td>
+        </tr>
+        <tr>
+            <td>80</td>
+            <td>Aprovado</td>
+        </tr>
+        <tr>
+            <td>70</td>
+            <td>Aprovado</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>Reprovado</td>
+        </tr>
+    </table>
+
 </code>
 </pre>
 
@@ -60,3 +135,5 @@ Lista de itens importantes:
 
 </body>
 </html>
+
+
